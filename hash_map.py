@@ -160,7 +160,7 @@ class HashMap:
     def resize_table(self, capacity):
         """
         Resizes the hash table to have a number of buckets equal to the given
-        capacity. All links need to be rehashed in this function after resizing
+        capacity.
         Args:
             capacity: the new number of buckets.
         """
@@ -206,8 +206,7 @@ class HashMap:
     def remove(self, key):
         """
         Removes and frees the link with the given key from the table. If no such link
-        exists, this does nothing. Remember to search the entire linked list at the
-        bucket.
+        exists, this does nothing.
         Args:
             key: they key to search for and remove along with its value
         """
