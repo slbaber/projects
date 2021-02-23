@@ -48,8 +48,7 @@ def top_words(source, number):
 
     ht = HashMap(2500, hash_function_2)
 
-    # This block of code will read a file one word as a time and
-    # put the word in `w`. It should be left as starter code.
+    # Reads a file one word as a time and
     with open(source) as f:
         for line in f:
             words = rgx.findall(line)
